@@ -12,6 +12,7 @@ console.log(tvTypes);
 const soldOutTvs = inventory.filter((inventory) => {return (inventory.originalStock - inventory.sold )=== 0});
 console.log(soldOutTvs);
 
+//BONUS:
 //bovenstaande in functie plaatsen
 function showSoldOutTvs (tvArray) {
     const soldOutTvs = tvArray.filter((inventory) => {return (inventory.originalStock - inventory.sold )=== 0});
@@ -30,10 +31,10 @@ buttonSoldOutTvs.addEventListener('click', () => {
 const tvsAmbiLight = inventory.filter((inventory) => {return inventory.options.ambiLight});
 console.log(tvsAmbiLight);
 
+//BONUS
 //bovenstaande in functie plaatsen
 function showAmbiLightTvs (tvArray) {
     const tvsAmbiLight = tvArray.filter((inventory) => {return inventory.options.ambiLight});
-    console.log(tvsAmbiLight);
     generateDetailsTvs(tvsAmbiLight);
 }
 //button click event listener aanmaken met een functie die parameter verwacht.
@@ -69,7 +70,8 @@ buttonSortPrice.addEventListener('click', () => {
     sortTVPrice(inventory);
 });
 
-//reset button
+
+//reset button toegevoegd
 
 const buttonReset = document.getElementById('reset-button');
 buttonReset.addEventListener('click', () => {

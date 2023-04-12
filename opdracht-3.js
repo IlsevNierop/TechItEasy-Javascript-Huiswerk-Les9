@@ -13,3 +13,9 @@ function generateListTvBrands (arrayTvs) {
 }
 
 generateListTvBrands(inventory);
+
+//
+// tvarray = [{brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, {brand: 'piet' }, ];
+//
+// generateListTvBrands(tvarray);
+
