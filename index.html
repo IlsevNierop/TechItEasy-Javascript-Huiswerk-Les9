@@ -9,33 +9,37 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
         <script src="main.js" defer></script>
+        <!--        volgorde veranderd zodat opdracht 1 (BONUS) gebruik kan maken van functie opdracht 1-->
+        <script src="opdracht-4.js" defer></script>
         <script src="opdracht-1.js" defer></script>
         <script src="opdracht-2.js" defer></script>
         <script src="opdracht-3.js" defer></script>
-        <script src="opdracht-4.js" defer></script>
         <title>Tech It Easy Dashboard</title>
     </head>
     <body>
         <h1>Tech It Easy Dashboard</h1>
         <div class="outer-container">
             <section class="section-sales inner-container">
-                <article>
-                    <h4>Total sold</h4>
-                    <h2 id="items-sold"></h2>
-                </article>
-                <article>
-                    <h4>Original stock</h4>
-                    <h2 id="original-stock"></h2>
-                </article>
-                <article>
-                    <h4>Inventory (to be sold)</h4>
-                    <h2 id="inventory"></h2>
-                </article>
+                <h3>Sales and inventory</h3>
+                <div class="container-sales-numbers">
+                    <article>
+                        <h4>Total sold</h4>
+                        <h2 id="items-sold"></h2>
+                    </article>
+                    <article>
+                        <h4>Original stock</h4>
+                        <h2 id="original-stock"></h2>
+                    </article>
+                    <article>
+                        <h4>Inventory (to be sold)</h4>
+                        <h2 id="inventory"></h2>
+                    </article>
+                </div>
             </section>
         </div>
         <div class="outer-container">
             <section class="section-list-brands inner-container">
-                <h4>TV Brands</h4>
+                <h3>TV Brands</h3>
                 <ul id="list-brands">
 
                 </ul>
@@ -44,9 +48,15 @@
         <div class="outer-container">
             <section class="section-details-tvs inner-container">
                 <h3>Details tv's</h3>
-                <article id="details-tv">
+                <div class="buttons">
+                    <button id="sort-price-button" type="submit">Sort on price</button>
+                    <button id="ambilight-tvs-button" type="submit">Show AmbiLight TV's</button>
+                    <button id="soldout-tvs-button" type="submit">Show sold out TV's</button>
+                    <button id="reset-button" type="submit">Reset filter</button>
+                </div>
+                <ul id="details-tv">
 
-                </article>
+                </ul>
             </section>
         </div>
 

@@ -128,6 +128,8 @@ function generateStringAvailableSizes(tvObject) {
 
 function generateDetailsTvs(tvArray) {
     const detailsTV = document.getElementById("details-tv");
+    // de details TV leegmaken als deze functie wordt aangeroepen, anders worden er bij het klikken van de button steeds meer TVs toegevoegd (ipv de weergave van de TVs veranderd)
+    detailsTV.innerHTML = "";
     tvArray.map((tv) => {
         detailsTV.innerHTML += `
 <article>
