@@ -100,6 +100,8 @@ h1 {
     font-size: 40px;
 }
 
+/*// zorgen dat de lijst naar rechts door gaat*/
+
 .section-list-brands {
     margin: 20px 50px;
 }
@@ -113,6 +115,39 @@ h1 {
     text-align: left;
     list-style: none;
     padding: 5px 0;
+}
+
+#list-brands {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#details-tv {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+}
+#details-tv article {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border: 1px solid var(--standard-darkblue);
+    background-color: white;
+    border-radius: 2px;
+    padding: 5px;
+    width: calc(50% - 10px);
+    flex-shrink: 1;
+    flex-basis: auto;
+}
+
+#details-tv article h5{
+    font-weight: bold;
+    font-size: 18px;
+}
+#details-tv article p{
+    font-size: 14px;
 }
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
