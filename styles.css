@@ -1,0 +1,194 @@
+/*////////////////////////
+    Table of Contents
+    1. Global Styles
+    2. Typography
+    3. Layout
+        3.1 Reusables
+        3.2 Other
+    4. Areas
+        4.1 Header
+        4.2 Body
+        etc.
+    5. Media Queries
+////////////////////////*/
+
+/* ------------------------------- 1. Global Styles -------------------------------- */
+
+/*CSS reset*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-blue-grey: #3D5A80;
+    --button-focus: #FBFBFB;
+    --bg-tiles: #FBFBFB;
+    --bg-buttons: #E3E4E4;
+    --bg: #F4F4F4;
+    --green-number: #32957A;
+    --red-number: #B23A48;
+    --blue-number: #03256C;
+
+}
+
+
+/* ------------------------------- 2. Typography ----------------------------------- */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    text-align: center;
+    font-weight: normal;
+    color: var(--text-blue-grey);
+    min-height: 100vh;
+    background-color: var(--bg);
+}
+
+/* ------------------------------- 3. Layout --------------------------------------- */
+
+/* --------------- 3.1 Reusables ----------------------- */
+
+
+.outer-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.inner-container {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 1000px;
+    margin-inline: 1rem;
+}
+
+/* --------------- 3.2 Other --------------------------- */
+
+/* ------------------------------- 4. Areas ---------------------------------------- */
+
+/* --------------- 4.1 Header ------------------------- */
+
+h1 {
+    padding: 30px 0;
+}
+
+/* --------------- 4.2 Body ------------------- */
+#items-sold {
+    color: var(--green-number);
+}
+
+#original-stock {
+    color: var(--blue-number);
+}
+
+#inventory {
+    color: var(--red-number);
+}
+
+.section-sales {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px 50px;
+}
+
+.container-sales-numbers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.section-sales  article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid var(--text-blue-grey);
+    background-color: var(--bg-tiles);
+    border-radius: 10px;
+    flex-basis: 200px;
+    height: 150px;
+}
+
+.section-sales h2 {
+    font-size: 40px;
+}
+
+/*// zorgen dat de lijst naar rechts door gaat*/
+
+.section-list-brands {
+    margin: 10px 50px;
+}
+
+.section-list-brands h3 {
+    text-align: left;
+    padding: 15px 0;
+}
+
+.section-list-brands > ul {
+    text-align: left;
+    list-style: none;
+    padding: 5px 0;
+}
+
+#list-brands {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 200px;
+}
+
+#details-tv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 20px 0;
+}
+#details-tv article {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border: 1px solid var(--text-blue-grey);
+    background-color: var(--bg-tiles);
+    border-radius: 4px;
+    padding: 5px;
+    width: calc(50% - 10px);
+    flex-shrink: 1;
+    flex-basis: auto;
+}
+
+#details-tv article h5{
+    font-weight: bold;
+    font-size: 18px;
+}
+#details-tv article p{
+    font-size: 14px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    color: var(--text-blue-grey);
+    font-weight: bold;
+    background-color: var(--bg-buttons);
+    width: 160px;
+    height: 35px;
+    border: 1px solid var(--text-blue-grey);
+}
+
+button:focus {
+    background-color: var(--button-focus);
+}
+
+/* ------------------------------- 5. Media Queries -------------------------------- */
